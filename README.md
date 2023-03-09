@@ -10,7 +10,7 @@ Practice
 ## Code
 * HTML 
 * CSS
-* simpleParallax.js
+* JavaScript
 
 ## Features
 * Navbar

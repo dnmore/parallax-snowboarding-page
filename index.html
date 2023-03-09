@@ -4,125 +4,140 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
-      rel="stylesheet"
-    />
     <script
       src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"
       defer
     ></script>
     <script src="parallax.js" defer></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>Snowboard</title>
   </head>
-  <body>
-    <header>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Journal</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </header>
+  <body class="font-sans text-base text-slate-900 bg-neutral-100">
+    <nav
+      class="flex flex-col text-center md:flex-row justify-center gap-5 text-cyan-900 font-bold border-2 border-y-cyan-900"
+    >
+      <a class="p-10 hover:bg-cyan-900 hover:text-zinc-100" href="#">Home</a>
+      <a class="p-10 hover:bg-cyan-900 hover:text-zinc-100" href="#">Share</a>
+      <a class="p-10 hover:bg-cyan-900 hover:text-zinc-100" href="#">Shop</a>
+    </nav>
+
     <main>
-      <section id="hero">
-        <div id="hero-img">
-          <img src="images/pexels-photo-1635086.webp" alt="" id="snowboard" />
+      <section class="md:flex">
+        <div
+          class="container mx-auto mt-10 w-80 bg-gray-100 border-1 border-slate-400"
+        >
+          <img
+            class="w-full"
+            src="images/pexels-photo-1635086.webp"
+            alt=""
+            id="snowboard"
+          />
+
+          <div class="text-center p-4">
+            <h2 class="font-bold">New Collection</h2>
+            <p class="mb-4">
+              Head into the backcountry with an outerwear kit that can keep up
+              with unpredictable terrain and extreme weather.
+            </p>
+            <a
+              class="px-8 py-2 bg-gray-800 text-gray-100 hover:bg-cyan-900 hover:text-zinc-100 rounded"
+              href="#"
+              >Shop</a
+            >
+          </div>
         </div>
 
-        <div id="hero-content">
-          <h2>New Collection</h2>
-          <p>
-            Head into the backcountry with an outerwear kit that can keep up
-            with unpredictable terrain and extreme weather.
-          </p>
-          <a href="#">View More</a>
-        </div>
-      </section>
+        <div
+          class="container mx-auto mt-10 w-80 bg-gray-100 border-1 border-slate-400"
+        >
+          <img
+            class="w-full"
+            src="images/pexels-photo-7166114.webp"
+            alt=""
+            id="gift"
+          />
 
-      <section id="gift-guides">
-        <div class="flex">
-          <div class="box">
-            <div>
-              <img src="images/pexels-photo-7166114.webp" alt="" id="gift" />
-            </div>
-            <div id="text-content">
-              <h2>Gift Guide</h2>
-              <p>
-                Don't know what to buy? We have you covered with a handy gift
-                guide for women, men, and kids.
-              </p>
-              <a href="#">Buy Now</a>
-            </div>
+          <div class="text-center p-4">
+            <h2 class="font-bold">Gift Guide</h2>
+            <p>Don't know what to buy?</p>
+            <p class="mb-4">
+              We have you covered with a handy gift guide for women, men, and
+              kids. Have a look!
+            </p>
+
+            <a
+              class="px-8 py-2 bg-gray-800 text-gray-100 hover:bg-cyan-900 hover:text-zinc-100 rounded"
+              href="#"
+              >Shop</a
+            >
           </div>
         </div>
       </section>
+      <!------------------------------------------------------------------------------------>
 
-      <section id="learning-pack">
-        <h2>Learning Pack</h2>
+      <div
+        class="container mx-auto mt-10 p-4 text-cyan-900 text-center border-2 border-y-cyan-900 border-x-neutral-100"
+      >
+        <h2 class="font-bold">Learning Pack</h2>
         <p>
           Don't miss our updates..to learn a new skill or how to maintain your
           gear!
         </p>
-        <ul>
-          <li>
-            <div>
-              <img
-                src="images/pexels-photo-2448970.webp"
-                alt=""
-                class="update"
-              />
-              <p>Update</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img
-                src="images/pexels-photo-209817.jpeg"
-                alt=""
-                class="update"
-              />
-              <p>Update</p>
-            </div>
-          </li>
-          <li>
-            <img
-              src="images/snowboarding-snowboarder-sport-fun-38441.webp"
-              alt=""
-              class="update"
-            />
-            <p>Update</p>
-          </li>
-        </ul>
-      </section>
+      </div>
 
-      <section id="journal">
-        <h2>Thank you for..</h2>
-        <p>Write a note sharing how snowboarding changed your life</p>
-        <a href="#">Share your message</a>
-      </section>
+      <section class="md:flex"
+      >
+        <div
+        class="container mx-auto mt-10 w-80 bg-gray-100 border-1 border-slate-400"
+        >
+          <img src="images/pexels-photo-2448970.webp" alt="" class="w-full update" />
+          <p class="h-20">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+            dolore.
+          </p>
+        </div>
 
-      <section id="service">
-        <h2>Our Service</h2>
-        <ul>
-          <li>No Lift lines</li>
-          <li>Online Returns</li>
-          <li>New Skills & Fresh Tips</li>
-        </ul>
+        <div
+          class="container mx-auto mt-10 w-80 box-border bg-gray-100 border-1 border-slate-400"
+        >
+          <img src="images/pexels-photo-2448970.webp" alt="" class="w-full update" />
+          <p class="h-20">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+            dolore.
+          </p>
+        </div>
+
+        <div
+          class="container mx-auto mt-10 w-80 box-border bg-gray-100 border-1 border-slate-400"
+        >
+          <img
+            src="images/pexels-photo-2448970.webp"
+            alt=""
+            class="w-full update"
+          />
+          <p class="h-20">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+            temporibus!
+          </p>
+        </div>
       </section>
-    </main>
-    <footer>
-      <ul>
-        <li>
-          <img src="icons/facebook.png" alt="" />
-        </li>
-        <li>
-          <img src="icons/insta.png" alt="" />
-        </li>
-      </ul>
-    </footer>
+      <!---------------------------------------------------------------------------------->
+      <section
+        id="journal"
+        class="container mx-auto mt-10 p-4 text-cyan-900 text-center border-2 border-t-cyan-900 border-x-neutral-100"
+      >
+        <h2 class="font-bold">Thank you for..</h2>
+        <p class="mb-4">
+          Write a note sharing how snowboarding changed your life!
+        </p>
+        <a
+          class="px-8 py-2 bg-cyan-900 text-gray-100 mb-10 hover:bg-cyan-800 hover:text-zinc-100 rounded"
+          href="#"
+          >Share your message</a
+        >
+      </section>
+     
+      
   </body>
 </html>
