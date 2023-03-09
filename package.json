@@ -1,0 +1,23 @@
+{
+  "name": "parallax_snowboard",
+  "version": "1.0.0",
+  "description": "***",
+  "main": "parallax.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./css/style.css --minify",
+    "watch": "npx tailwindcss -i ./input.css -o ./css/style.css --watch --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnmore/parallax-snowboarding-page.git"
+  },
+  "author": "Diana Moretti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dnmore/parallax-snowboarding-page/issues"
+  },
+  "homepage": "https://github.com/dnmore/parallax-snowboarding-page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
