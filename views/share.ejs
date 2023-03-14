@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head')%>
+  </head>
+  <body>
+    <%- include('includes/nav')%>
+    <main>
+      <div class="container text-center py-5 bg-body-secondary mb-5">
+        <h1>Share Your Message</h1>
+        <form action="/share" method="post">
+          <div class="my-2">
+            <label for="name" style="display: block" >Your Name</label>
+            <input type="text" id="name" name="name"class="border border-light" required />
+          </div> 
+          <div class="my-2">
+            <label for="title" style="display: block">Title</label>
+            <input type="text" id="title" name="title" class="border border-light" required />
+          </div>
+          <div class="my-2">
+            <label for="message" style="display: block">Your Message</label>
+            <textarea name="message" id="message" rows="10" class="border border-light" required></textarea>
+          </div>
+          <button class="btn btn-primary">Share</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
