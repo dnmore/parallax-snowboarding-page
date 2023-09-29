@@ -5,24 +5,22 @@
   </head>
   <body>
     <%- include('includes/nav')%>
-    <div class="text-center">
+    <div id="messages">
       <h1>Messages</h1>
       <% if (numberMessages === 0){ %>
       <p>
-        Unfortunately we have no messages yet, would you start sharing one?
-      </p>
-      <a class="btn btn-primary" href="/share">Share</a>
+        Unfortunately we have no messages yet, would you start sharing one?</p>
+
       <% } else { %>
       <p>Browse messages of other users!</p>
 
       <ul>
         <% for (const message of messages){ %>
-        <section class="container text-center py-5 bg-body-secondary rounded mb-5">
-          <li style="list-style: none;">
-
+        <section>
+          <li>
             <h2><%= message.title %></h2>
             <p><%= message.message %></p>
-            <p ><%= message.name %></p>
+            <p><%= message.name %></p>
           </li>
         </section>
         <% } %>
